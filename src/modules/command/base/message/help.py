@@ -8,9 +8,9 @@ from ....language import constant as lc
 def help(): 
     if lc.ENG:
         message  = 'Commands\n'
-        message += '  help            Help command\n'
-        message += '  weapon          You can check the information of the weapon information.\n'
-        message += '  grenade         You can check the information of the grenade information.\n'
+        message += '  !help           Help command\n'
+        message += '  !weapon         You can check the information of the weapon information.\n'
+        message += '  !grenade        You can check the information of the grenade information.\n'
 
         message += '\n'
         
