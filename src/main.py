@@ -1,13 +1,14 @@
-import json
+import os
 from modules.command     import commands    as c
 from modules.globalvalue import globalvalue as v
 from discord.ext         import commands
 
 
 
-config_dict = json.load(open('../config.json', 'r'))
-token        = config_dict['token']
-v.channel_id = int(config_dict['channel_id'])
+
+
+token        = os.environ['TOKEN']
+v.channel_id = int(os.environ['CHANNEL_ID'])
 
 bot = commands.Bot(command_prefix='!')
 
